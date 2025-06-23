@@ -47,6 +47,23 @@
       color: #63b3ed;
       text-decoration: underline;
     }
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+    margin: 1.5rem auto; /* optional spacing */
+    max-width: 90vw; /* max width relative to viewport */
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
   </style>
 </head>
 <body>
@@ -55,7 +72,7 @@
     Sticky Games is a one-man game development company creating immersive VR experiences. Currently working on <strong>Falldenn</strong>, a VR game planned for early access release in December 2025.
   </div>
 <!-- YouTube Video Embed -->
-<div class="video-container" style="max-width: 600px; margin: 2rem auto;">
+<div class="video-container">
   <iframe width="560" height="315" 
   src="https://www.youtube.com/embed/XoxgMdImlOw?start=1" 
   frameborder="0" 
