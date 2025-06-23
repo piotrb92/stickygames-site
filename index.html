@@ -1,12 +1,62 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Game</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sticky Games</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    img.logo {
+      max-width: 80vw;
+      height: auto;
+      margin: 0 auto 1.5rem;
+      display: block;
+      image-rendering: -webkit-optimize-contrast;
+    }
+    .description {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      line-height: 1.5;
+      color: #bbb;
+    }
+    h2 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .social-links a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #63b3ed;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Sticky Games</h1>
-  <p>Coming soon. Follow us on:</p>
-  <a href="https://www.youtube.com/@BroMakesGames">YouTube</a>
+  <img src="logo.png" alt="Sticky Games Logo" class="logo" />
+  <div class="description">
+    Sticky Games is a one-man game development company creating immersive VR experiences. Currently working on <strong>Falldenn</strong>, a VR game planned for early access release in December 2025.
+  </div>
+  <h2>Socials</h2>
+  <div class="social-links">
+    <a href="https://www.youtube.com/@BroMakesGames" target="_blank" rel="noopener noreferrer">YouTube</a>
+    <!-- Duplicate the above <a> for more social links -->
+  </div>
 </body>
 </html>
