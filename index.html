@@ -13,77 +13,116 @@
       text-align: center;
       padding: 2rem 1rem;
     }
+
     img.logo {
-  max-width: 600px;  /* max width in px */
-  width: 100%;       /* let it shrink on smaller screens */
-  height: auto;
-  margin: 0 auto 1.5rem;
-  display: block;
-  image-rendering: -webkit-optimize-contrast;
-}
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 1.5rem;
+      display: block;
+    }
+
     .description {
       font-size: 1.1rem;
       max-width: 600px;
-      margin: 0 auto 3rem;
+      margin: 0 auto 2rem;
       line-height: 1.5;
       color: #bbb;
     }
+
     h2 {
-      font-weight: 600;
+      margin-top: 3rem;
       margin-bottom: 1rem;
       color: #fff;
       letter-spacing: 1px;
     }
-    .social-links a {
+
+    h3 {
+      margin-top: 2rem;
+      color: #fff;
+    }
+
+    .links a {
       color: #1e90ff;
       text-decoration: none;
-      font-weight: 500;
       font-size: 1.2rem;
-      display: inline-block;
       margin: 0.5rem 1rem;
-      transition: color 0.3s ease;
+      display: inline-block;
     }
-    .social-links a:hover {
-      color: #63b3ed;
-      text-decoration: underline;
-    }
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    padding-top: 25px;
-    height: 0;
-    margin: 1.5rem auto; /* optional spacing */
-    max-width: 90vw; /* max width relative to viewport */
-  }
 
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
+    .links a:hover {
+      text-decoration: underline;
+      color: #63b3ed;
+    }
+
+    .game {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .game p {
+      color: #bbb;
+    }
+
+    .thumbnail {
+      margin-top: 1rem;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .thumbnail img:hover {
+      transform: scale(1.02);
+      opacity: 0.9;
+    }
   </style>
 </head>
+
 <body>
+
   <img src="logo.png" alt="Sticky Games Logo" class="logo"/>
+
   <div class="description">
-    Sticky Games is a one-man game development company creating immersive VR experiences. Currently working on <strong>Falldenn</strong>, a VR medieval survival sandbox game planned for early access release in 2026 and <strong>Can You Dig It?</strong>, a VR sandbox adventure game planned for release in March 2026.
+    Sticky Games is a one-man game development company creating immersive VR experiences.
   </div>
-<!-- YouTube Video Embed -->
-<div class="video-container">
-  <iframe width="560" height="315" 
-  src="https://www.youtube.com/embed/XoxgMdImlOw?start=1" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen>
-</iframe>
-</div>
-  <h2>Socials</h2>
-  <div class="social-links">
-    <a href="https://www.youtube.com/@BroMakesGames" target="_blank" rel="noopener noreferrer">YouTube</a>
-    <!-- Duplicate the above <a> for more social links -->
+
+  <!-- LINKS -->
+  <h2>Links</h2>
+  <div class="links">
+    <a href="https://www.youtube.com/@BroMakesGames" target="_blank">YouTube</a>
+    <a href="https://discord.gg/qJtc2dbJNs" target="_blank">Discord</a>
   </div>
+
+  <!-- GAMES -->
+  <h2>Games</h2>
+
+  <!-- Cozy Digger -->
+  <div class="game">
+    <h3>Cozy Digger</h3>
+    <p>
+      A VR sandbox adventure game planned for release on Meta Store in March 2026.
+    </p>
+
+    <a class="thumbnail" href="https://www.youtube.com/watch?v=0IY5mLKvYpk" target="_blank">
+      <img src="https://img.youtube.com/vi/0IY5mLKvYpk/hqdefault.jpg" alt="Cozy Digger Trailer">
+    </a>
+  </div>
+
+  <!-- Falldenn -->
+  <div class="game">
+    <h3>Falldenn</h3>
+    <p>
+      A VR medieval survival sandbox game currently in development.
+    </p>
+
+    <a class="thumbnail" href="https://www.youtube.com/watch?v=XoxgMdImlOw" target="_blank">
+      <img src="https://img.youtube.com/vi/XoxgMdImlOw/hqdefault.jpg" alt="Falldenn Devlog">
+    </a>
+  </div>
+
 </body>
 </html>
